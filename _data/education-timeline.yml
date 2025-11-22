@@ -1,0 +1,11 @@
+- entity: Microsoft,
+  link: https://www.microsoft.com/en-in/
+  location: India
+  role: <b>Software Engineer - Machine Learning</b>
+  from: July 2023
+  to: Present
+  #description:
+  #  - "Working on designing LLM-based workflows"
+  courses:
+  image: image_url
+  tools: [toolA, toolB, toolC]
