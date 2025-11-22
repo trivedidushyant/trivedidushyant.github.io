@@ -23,22 +23,7 @@ nav_exclude:                                            # The following path is 
 author:
   name              : Dushyant Trivedi
   image             : https://raw.githubusercontent.com/trivedidushyant/trivedidushyant.github.io/master/_images/dp.jpeg
-# behance           : your_username
-# dribbble          : your_username
-# email             : your_username
-# facebook          : your_username
   github            : trivedidushyant
-# gitlab            : your_username
-# instagram         : your_username
-# medium            : your_username
-# soundcloud        : your_username
-# spotify           : your_username
-# stackoverflow     : your_user_id
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-# twitter           : your_username
-# vimeo             : your_username
-# youtube           : your_channel_namef
 
 ### Disqus
 disqus: portfolio-bnhbmol6a5

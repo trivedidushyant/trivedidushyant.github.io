@@ -22,7 +22,7 @@ permalink: /
   
   
    <p style="font-size:30px"> <b>About me</b></p> 
-    Hi, I am Dushyant Trivedi
+    Hi, I am Dushyant Trivedi. I am currently working at Microsoft as a Software Engineer - Machine Learning. Where I work on leveraging LLMs to serve the users of PowerPoint Copilot. Before joining industry, I completed my B.Tech + M.Tech (dual degree) from IIT Kharagpur, where I was advised by Prof. Adway Mitra. 
     
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">     
     <br> <br> 
