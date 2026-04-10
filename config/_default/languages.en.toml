@@ -1,0 +1,19 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Dushyant Trivedi"
+
+[params]
+  displayName = "English"
+  isoCode = "en"
+  dateFormat = "2 January 2006"
+  description = "Software Engineer - ML at Microsoft | Building LLM-powered features at scale"
+
+[params.author]
+  name = "Dushyant Trivedi"
+  image = "img/profile.jpg"
+  headline = "Software Engineer - ML @ Microsoft"
+  links = [
+    { github = "https://github.com/trivedidushyant" },
+    { linkedin = "https://linkedin.com/in/dushyant-trivedi-187734184" },
+  ]

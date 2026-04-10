@@ -1,0 +1,50 @@
+{{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
+
+<article class="max-w-full prose dark:prose-invert">
+  <div class="py-8 sm:py-14 lg:py-20">
+    <div class="homepage-hero flex flex-col-reverse items-center gap-8 lg:flex-row lg:items-center lg:gap-16">
+
+      <div class="hero-text flex-1">
+        <h1 class="hero-heading text-3xl font-extrabold sm:text-4xl">
+          {{ .Site.Params.Author.name | default .Site.Title }}
+        </h1>
+        {{ with .Site.Params.Author.headline }}
+          <p class="hero-subtitle">{{ . | markdownify }}</p>
+        {{ end }}
+        <div class="prose dark:prose-invert max-w-none">
+          {{ .Content }}
+        </div>
+        <div class="mt-6 text-xl hero-links">
+          {{ partialCached "author-links.html" . }}
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 flex flex-col items-center">
+        {{ with .Site.Params.Author.image }}
+          {{ $authorImage := resources.Get . }}
+          {{ if $authorImage }}
+            {{ $final := $authorImage }}
+            {{ $squareImage := $authorImage }}
+            {{ if not (or $disableImageOptimization (eq $authorImage.MediaType.SubType "svg")) }}
+              {{ $final = $authorImage.Fill (print "400x400 q" ( $.Site.Params.Author.imagequality | default "96" )) }}
+              {{ $shortSide := int (math.Min $authorImage.Width $authorImage.Height) }}
+              {{ $squareImage = $authorImage.Crop (printf "%dx%d" $shortSide $shortSide ) }}
+            {{ end }}
+            <img
+              class="profile-photo rounded-full nozoom"
+              alt="{{ $.Site.Params.Author.name | default `Author` }}"
+              src="{{ $final.RelPermalink }}"
+              data-zoom-src="{{ $squareImage.RelPermalink }}">
+          {{ end }}
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</article>
+
+{{ if .Site.Params.homepage.showRecent }}
+<section>
+  {{ partial "recent-articles/main.html" . }}
+</section>
+{{ end }}

@@ -1,0 +1,68 @@
+# -- Theme Parameters --
+
+colorScheme = "portfolio"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+
+enableSearch = false
+enableCodeCopy = true
+enableStructuredBreadcrumbs = false
+highlightCurrentMenuArea = true
+disableTextInHeader = false
+mainSections = ["blog"]
+defaultSocialImage = "img/og-image.svg"
+
+[header]
+  layout = "fixed-fill-blur"
+
+[footer]
+  showMenu = false
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "custom"
+  showRecent = false
+
+[article]
+  showDate = true
+  showViews = false
+  showLikes = false
+  showDateUpdated = false
+  showAuthor = false
+  showHero = false
+  showBreadcrumbs = false
+  showDraftLabel = true
+  showEdit = false
+  showHeadingAnchors = false
+  showPagination = true
+  showReadingTime = true
+  showTableOfContents = false
+  showRelatedContent = false
+  showTaxonomies = false
+  showWordCount = false
+  sharingLinks = []
+  showZenMode = false
+
+[list]
+  showHero = false
+  showBreadcrumbs = false
+  showSummary = true
+  showTableOfContents = false
+  showCards = true
+  orderByWeight = true
+  groupByYear = false
+  cardView = false
+
+[taxonomy]
+  showTermCount = true
+  showHero = false
+  showBreadcrumbs = false
+  cardView = true
+
+[term]
+  showHero = false
+  showBreadcrumbs = false
+  cardView = true

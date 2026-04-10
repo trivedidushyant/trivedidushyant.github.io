@@ -1,0 +1,198 @@
+/* ── Layout ── */
+
+[class*="max-w-7xl"][class*="px-"] {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+@media (min-width: 640px) {
+  [class*="max-w-7xl"][class*="px-"] {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+@media (min-width: 1024px) {
+  [class*="max-w-7xl"][class*="px-"] {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+  }
+}
+
+.max-w-prose {
+  max-width: 100% !important;
+}
+
+/* ── Homepage hero ── */
+
+.homepage-hero {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-heading {
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+
+.hero-subtitle {
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(20, 184, 166);
+}
+.dark .hero-subtitle {
+  color: rgb(94, 234, 212);
+}
+
+.hero-links {
+  text-align: left;
+}
+
+/* ── Profile photo ── */
+
+.profile-photo {
+  width: 13rem;
+  height: 13rem;
+  margin: 0;
+  object-fit: cover;
+  border: 3px solid rgba(161, 161, 170, 0.15);
+  transition: transform 0.3s ease;
+}
+@media (min-width: 640px) {
+  .profile-photo { width: 15rem; height: 15rem; }
+}
+@media (min-width: 1024px) {
+  .profile-photo { width: 17rem; height: 17rem; }
+}
+.dark .profile-photo {
+  border-color: rgba(94, 234, 212, 0.25);
+  box-shadow: 0 0 25px rgba(94, 234, 212, 0.08);
+}
+
+/* ── Typography ── */
+
+html { scroll-behavior: smooth; }
+
+.prose {
+  --tw-prose-body: rgb(55, 65, 81);
+  --tw-prose-headings: rgb(17, 24, 39);
+  --tw-prose-bold: rgb(17, 24, 39);
+}
+.dark .prose {
+  --tw-prose-body: rgb(228, 228, 231);
+  --tw-prose-headings: rgb(250, 250, 250);
+  --tw-prose-bold: rgb(244, 244, 245);
+}
+.dark body {
+  color: rgb(212, 212, 216);
+}
+
+.prose p,
+.prose li {
+  line-height: 1.75;
+}
+
+/* ── Transitions ── */
+
+a, button {
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+/* ── Images: center aligned ── */
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* ── KaTeX ── */
+
+.katex-display {
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+@media (max-width: 768px) {
+  .katex-display { font-size: 0.85rem; }
+}
+
+/* ── Article cards ── */
+
+.article-link--simple {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.article-link--simple:hover {
+  transform: translateY(-2px);
+  border-color: rgb(20, 184, 166) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.dark .article-link--simple:hover {
+  border-color: rgb(94, 234, 212) !important;
+  box-shadow: 0 4px 20px rgba(94, 234, 212, 0.07);
+}
+
+.article-link--simple a h2 {
+  transition: color 0.15s ease;
+}
+.article-link--simple:hover a h2 {
+  color: rgb(20, 184, 166) !important;
+}
+.dark .article-link--simple:hover a h2 {
+  color: rgb(94, 234, 212) !important;
+}
+
+/* ── Timeline: compact cards ── */
+
+/* Reduce card padding and spacing */
+.border-s-2 .block.p-6 {
+  padding: 1rem 1.25rem !important;
+  margin-bottom: 1.5rem !important;
+  margin-inline-start: 0.75rem !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Tighten bullet point spacing inside cards */
+.border-s-2 .block.p-6 ul {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.border-s-2 .block.p-6 li {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+/* ── Timeline ── */
+
+.rounded-md.border.border-primary-400 {
+  border: none !important;
+  background: rgba(20, 184, 166, 0.1);
+  color: rgb(13, 148, 136) !important;
+}
+.dark .rounded-md.border.border-primary-400,
+.rounded-md.border.dark\:border-primary-600 {
+  border: none !important;
+  background: rgba(94, 234, 212, 0.1);
+}
+
+.border-s-2 .rounded-full.bg-primary-500 {
+  align-self: flex-start;
+  margin-top: 1.5rem;
+}
+
+/* ── Footer ── */
+
+footer {
+  opacity: 0.9;
+  text-align: center;
+}
+footer .flex {
+  justify-content: center;
+}
