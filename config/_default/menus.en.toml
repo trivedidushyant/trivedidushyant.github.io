@@ -1,7 +1,7 @@
 # -- Main Menu --
 
 [[main]]
-  name = "Experience"
+  name = "Work"
   pageRef = "experience"
   weight = 10
 
@@ -19,11 +19,6 @@
   name = "Skills"
   pageRef = "skills"
   weight = 40
-
-[[main]]
-  name = "Resume"
-  url = "/resume/Dushyant_Trivedi_Resume.pdf"
-  weight = 50
 
 [[main]]
   identifier = "github"

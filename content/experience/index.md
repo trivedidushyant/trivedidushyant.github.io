@@ -1,6 +1,6 @@
 ---
-title: "Experience"
-description: "Professional experience and career journey"
+title: "Work"
+description: "Selected product and engineering work"
 showDate: false
 showReadingTime: false
 showWordCount: false
@@ -13,13 +13,16 @@ showPagination: false
 
 {{< timelineItem icon="microsoft" header="Software Engineer - Machine Learning" badge="Mar 2024 - Present" subheader="Microsoft · PowerPoint Copilot" >}}
 <ul>
-<li>Built and deployed LLM-powered workflows for features like text formatting, presentation translation, and presentation creation</li>
-<li>Architected a robust, multi-stage LLM system for handling text formatting requests, with modular stages for intent understanding, formatting extraction, and command generation, enabling accurate and context-aware edits at scale</li>
-<li>Fine-tuned GPT-4.1 on Azure for formatting command generation; integrated with prompt-based modules to optimize efficiency</li>
-<li>Enhanced PPT Edit Agent's formatting expert by refining prompts and building LLM-judge evaluations to improve accuracy</li>
-<li>Added large file support via Azure Blob Storage, improving translation workflow reliability and raising user success rate by 10%</li>
-<li>Integrated LLM-driven capabilities into large-scale C++, C#, and React codebases; designed telemetry infrastructure and interactive Kusto dashboards to monitor usage trends, surface model failures, and accelerate iterative product improvements</li>
-<li>Delivered AI-powered presentation creation and translation features with <strong>700K+ and 125K+ monthly usage</strong> across PowerPoint</li>
+<li>Shipped LLM-powered presentation creation (<strong>700K+ MAU</strong>), translation (<strong>125K+ MAU</strong>), and text-formatting experiences across Web, Win32, and Mac, integrating AI capabilities into production C++, C#, and React codebases</li>
+<li>Designed an end-to-end multi-stage LLM workflow for text formatting, covering intent analysis, formatting extraction, and command generation; fine-tuned GPT-4.1 on <strong>10K curated examples</strong> to generate domain-specific editing actions</li>
+<li>Improved formatting-agent quality through prompt tuning and research prototypes for single- and multi-agent systems</li>
+<li>Designed and shipped the Text-to-Visual experience in PowerPoint Rewrite, enabling one-click text-to-visual conversion; built a Playwright-based evaluation pipeline and LLM-as-judge to score outputs across iterations</li>
+<li>Built foundational handoff infrastructure that routes on-canvas Copilot requests into PPT Agent chat, plus a shared licensing layer that standardizes eligibility checks for downstream features</li>
+<li>Built a Redis-backed shared undo stack for the PPT headless agent and PowerPoint previewer in M365 Copilot Chat, preserving undo and redo state across agent edits and user changes</li>
+<li>Architected cross-platform PPT Agent rollouts independent of a shared release train, cutting the release cycle from <strong>7 days to 2 days</strong></li>
+<li>Improved document-grounding upload reliability through end-to-end observability, proactive session recovery, and fixes for retry and concurrency defects, eliminating its largest production failure source</li>
+<li>Architected large-file translation for PowerPoint Web using Azure Blob Storage, increasing user success rate by <strong>10%</strong></li>
+<li>Prototyped PPT Agent Memory for user context across sessions, winning the Best Project Award at an internal hackathon</li>
 </ul>
 {{< /timelineItem >}}
 

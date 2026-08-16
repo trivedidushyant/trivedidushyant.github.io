@@ -1,12 +1,12 @@
 ---
 title: "Dushyant Trivedi"
-description: "Software Engineer - ML @ Microsoft | Building LLM-powered features at scale"
+description: "Software engineer building reliable AI systems and product experiences"
 ---
 
-I'm a **Software Engineer - Machine Learning** at **Microsoft**, working on the PowerPoint Copilot team. I architect multi-stage LLM systems that power text formatting, translation, and presentation creation features serving hundreds of thousands of users every month.
+I build software systems that turn capable models into reliable product experiences.
 
-I graduated from **IIT Kharagpur** with a dual degree (B.Tech + M.Tech) in Industrial and Systems Engineering, a minor in Computer Science, and a micro-specialization in AI. My research explored depression detection from social media using fine-tuned RoBERTa and Bayesian networks.
+I'm a Software Engineer - Machine Learning at Microsoft, working on PowerPoint Copilot. I care about what happens after a model works in isolation: the engineering, evaluation, and product decisions that make AI useful for people.
 
-I'm deeply interested in generative models and autoregressive architectures — I [write about them](/blog/) here. When I'm not building LLM pipelines, you'll find me on [CodeForces](https://codeforces.com/) (Expert, 1651) or exploring new papers.
+I studied Industrial and Systems Engineering at IIT Kharagpur, with a minor in Computer Science and a focus on AI. My early research used language and probabilistic models to study mental-health signals in social media. Today, I keep returning to deep learning and language models: how they work, how they scale, and how we can build with them thoughtfully.
 
-Outside of work, I read books, run, swim, and trek. I've completed **7 Himalayan treks** — Rupin Pass, Buran Pass, Gaumukh Tapovan, Pangarchulla, and Brahmtal among them. The mountains are where I find my quiet.
+I write [notes about the ideas I'm exploring](/blog/), enjoy competitive programming, and make time for books, running, swimming, and the mountains. I've completed seven Himalayan treks; they are where I find perspective and quiet.

@@ -12,8 +12,8 @@
 }
 @media (min-width: 1024px) {
   [class*="max-w-7xl"][class*="px-"] {
-    padding-left: 6rem !important;
-    padding-right: 6rem !important;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
   }
 }
 
@@ -24,7 +24,7 @@
 /* ── Homepage hero ── */
 
 .homepage-hero {
-  max-width: 64rem;
+  max-width: 72rem;
   margin: 0 auto;
 }
 
@@ -34,44 +34,52 @@
 
 .hero-heading {
   text-align: left;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-size: clamp(2.25rem, 4vw, 3.75rem) !important;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
 }
 
 .hero-subtitle {
   text-align: left;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.75rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
   font-weight: 500;
-  color: rgb(20, 184, 166);
+  letter-spacing: 0.01em;
+  color: rgb(83, 103, 127);
 }
 .dark .hero-subtitle {
-  color: rgb(94, 234, 212);
+  color: rgb(181, 195, 211);
 }
 
 .hero-links {
   text-align: left;
 }
 
+.hero-text .prose p {
+  max-width: 46rem;
+}
+
 /* ── Profile photo ── */
 
 .profile-photo {
-  width: 13rem;
-  height: 13rem;
+  width: 12rem;
+  height: 12rem;
   margin: 0;
   object-fit: cover;
-  border: 3px solid rgba(161, 161, 170, 0.15);
+  border: 1px solid rgba(161, 161, 170, 0.2);
   transition: transform 0.3s ease;
 }
 @media (min-width: 640px) {
-  .profile-photo { width: 15rem; height: 15rem; }
+  .profile-photo { width: 14rem; height: 14rem; }
 }
 @media (min-width: 1024px) {
-  .profile-photo { width: 17rem; height: 17rem; }
+  .profile-photo { width: 15.5rem; height: 15.5rem; }
 }
 .dark .profile-photo {
-  border-color: rgba(94, 234, 212, 0.25);
-  box-shadow: 0 0 25px rgba(94, 234, 212, 0.08);
+  border-color: rgba(181, 195, 211, 0.24);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
 }
 
 /* ── Typography ── */
@@ -94,7 +102,7 @@ html { scroll-behavior: smooth; }
 
 .prose p,
 .prose li {
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 /* ── Transitions ── */
@@ -130,61 +138,114 @@ a, button {
 
 .article-link--simple:hover {
   transform: translateY(-2px);
-  border-color: rgb(20, 184, 166) !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: rgb(110, 129, 153) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .dark .article-link--simple:hover {
-  border-color: rgb(94, 234, 212) !important;
-  box-shadow: 0 4px 20px rgba(94, 234, 212, 0.07);
+  border-color: rgb(181, 195, 211) !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
 .article-link--simple a h2 {
   transition: color 0.15s ease;
 }
 .article-link--simple:hover a h2 {
-  color: rgb(20, 184, 166) !important;
+  color: rgb(83, 103, 127) !important;
 }
 .dark .article-link--simple:hover a h2 {
-  color: rgb(94, 234, 212) !important;
+  color: rgb(181, 195, 211) !important;
 }
 
 /* ── Timeline: compact cards ── */
 
 /* Reduce card padding and spacing */
 .border-s-2 .block.p-6 {
-  padding: 1rem 1.25rem !important;
+  padding: 1.25rem 1.5rem !important;
   margin-bottom: 1.5rem !important;
-  margin-inline-start: 0.75rem !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+  margin-inline-start: 1rem !important;
+  box-shadow: none !important;
 }
 
 /* Tighten bullet point spacing inside cards */
 .border-s-2 .block.p-6 ul {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
 }
 .border-s-2 .block.p-6 li {
-  margin-top: 0.15rem;
-  margin-bottom: 0.15rem;
+  margin-top: 0.45rem;
+  margin-bottom: 0.45rem;
 }
 
 /* ── Timeline ── */
 
 .rounded-md.border.border-primary-400 {
   border: none !important;
-  background: rgba(20, 184, 166, 0.1);
-  color: rgb(13, 148, 136) !important;
+  background: rgba(110, 129, 153, 0.12);
+  color: rgb(83, 103, 127) !important;
 }
 .dark .rounded-md.border.border-primary-400,
 .rounded-md.border.dark\:border-primary-600 {
   border: none !important;
-  background: rgba(94, 234, 212, 0.1);
+  background: rgba(181, 195, 211, 0.1);
 }
 
 .border-s-2 .rounded-full.bg-primary-500 {
   align-self: flex-start;
   margin-top: 1.5rem;
+}
+
+/* ── Mobile ── */
+
+@media (max-width: 639px) {
+  [class*="max-w-7xl"][class*="px-"] {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .homepage-hero {
+    gap: 2.5rem !important;
+  }
+
+  .hero-heading {
+    font-size: clamp(2.25rem, 11vw, 3rem) !important;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-text .prose p {
+    max-width: none;
+  }
+
+  .profile-photo {
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+
+  .hero-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+
+  .border-s-2 .block.p-6 {
+    padding: 1.25rem 1.25rem !important;
+    margin-bottom: 1.5rem !important;
+    margin-inline-start: 0.625rem !important;
+  }
+
+  .border-s-2 .block.p-6 li {
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .border-s-2 .rounded-full.bg-primary-500 {
+    margin-top: 1.25rem;
+  }
 }
 
 /* ── Footer ── */
